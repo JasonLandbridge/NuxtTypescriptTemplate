@@ -31,7 +31,10 @@ const config: Configuration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '@plugins/vuetify.ts', mode: 'client' }],
+  plugins: [
+    { src: '@plugins/vuetify.ts', mode: 'client' },
+    { src: '@plugins/axios.ts', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

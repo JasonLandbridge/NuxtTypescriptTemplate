@@ -12,7 +12,7 @@ export default (ctx: Context): void => {
   Vue.use(Vuetify)
 
   const vuetify = new Vuetify({
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/scss/_variables.scss'],
     theme: {
       options: {
         customProperties: true

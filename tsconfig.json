@@ -10,12 +10,14 @@
     "strict": true,
     "noEmit": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "baseUrl": "./src",
+    "outDir": "./build/",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios", "@nuxtjs/vuetify",]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": ["node_modules", ".nuxt", "dist", ".vscode"]
 }
