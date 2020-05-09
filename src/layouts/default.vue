@@ -53,20 +53,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator';
 
 interface iNav {
-	icon: string
-	title: string
-	to: string
+	icon: string;
+	title: string;
+	to: string;
 }
 
 @Component
 export default class Default extends Vue {
-	title: string = 'Vuetify.js'
-	clipped: boolean = false
-	drawer: boolean = false
-	fixed: boolean = false
+	title: string = 'Vuetify.js';
+	clipped: boolean = false;
+	drawer: boolean = false;
+	fixed: boolean = false;
 	items: iNav[] = [
 		{
 			icon: 'mdi-apps',
@@ -78,18 +78,18 @@ export default class Default extends Vue {
 			title: 'Inspire',
 			to: '/inspire',
 		},
-	]
+	];
 
-	miniVariant: boolean = false
-	right: boolean = true
-	rightDrawer: boolean = false
+	miniVariant: boolean = false;
+	right: boolean = true;
+	rightDrawer: boolean = false;
 
 	get currentYear(): number {
-		return new Date().getFullYear()
+		return new Date().getFullYear();
 	}
 
 	created(): void {
-		this.$vuetify.theme.dark = true
+		this.$vuetify.theme.dark = true;
 	}
 }
 </script>
